@@ -1,0 +1,61 @@
+
+.login-card{
+    position: absolute;
+    left: 30%;
+    width: 30%;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 15px;
+    height: 350px;
+}
+
+.login-username-block label {
+    display: block;
+}
+
+.login-username-block{
+    position: absolute;
+    top: 20%;
+}
+
+.login-password-block label {
+    display: block;
+}
+
+.login-password-block{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.login-password-input{
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thin;
+    height: 1rem;
+    width: 250px;
+}
+
+
+/* Login Card buttons */
+.login-submit-button{
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    width: 100px;
+    height: 40px;
+    background-color: aqua;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-reset-button{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    background-color: rgb(231, 8, 8);
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+}
