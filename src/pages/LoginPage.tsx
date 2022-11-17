@@ -34,6 +34,8 @@ const LoginPage = () => {
 
                 <input className='login-submit-button' type='submit' value='Login'></input>
                 <input className='login-reset-button' type='reset' value='Clear'></input>
+
+                
             </form>
         </div>
         </>
