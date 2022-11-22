@@ -5,6 +5,7 @@ import ErrorPage from './pages/ErrorPage';
 import HomePage from './pages/HomePage';
 import NewEmployeePage from './pages/NewEmployeePage';
 import './App.css';
+import LoginPage from './pages/LoginPage';
 
 const App = () => {
     return(
@@ -15,6 +16,7 @@ const App = () => {
             <button><Link  to="/">Home Page</Link></button>
             <button><Link  to="/list">Employees List</Link></button>
             <button><Link  to="/new">New Employee</Link></button>
+            <button><Link  to="/login">Login</Link></button>
         </nav>
 
         </header>
@@ -25,6 +27,7 @@ const App = () => {
             <Route path='*' element={<ErrorPage/>}></Route>
             <Route path='/list' element={<EmployeesListPage/>}></Route>
             <Route path='/new' element={<NewEmployeePage/>}></Route>
+            <Route path='/login' element={<LoginPage/>}></Route>
         </Routes>
 
         <footer >

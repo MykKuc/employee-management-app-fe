@@ -1,0 +1,25 @@
+
+.form-input-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.form-input-card{
+    border-style: solid;
+    border-radius: 15px;
+    border-width: thin;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+}
+
+.new-employee-info{
+    font-family: 'Roboto';
+}
+
+
+.new-employee-submit-button{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
