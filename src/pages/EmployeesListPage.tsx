@@ -1,9 +1,33 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import Employee from '../components/Employee';
 
 const EmployeesListPage = () => {
+
+    const [employees, setEmployees] = useState<any[]>([]);
+
+    /* Get all the employees. */
+    useEffect(() => {
+
+        fetch('http://localhost:8080/all',{
+            method: "GET"
+            })
+            .then(response => response.json())
+            .then(data => setEmployees(data))
+            .catch(error => console.log(`Error is ${error}`));
+
+    }, [employees]);
+
+    const listOfEmployees = employees.map(employee =>
+        <Employee key={employee.id}
+                  id={employee.id}
+                employeeName={employee.employeeName}
+                employeeSurname={employee.employeeSurname}></Employee>
+        );
+
     return (
         <>
-            <p>Here should be a list of employees in here. This functionality is nat added yet.</p>
+            <p>The List of all the employees:</p>
+            {listOfEmployees}
         </>
     );
 }
