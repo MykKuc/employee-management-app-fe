@@ -1,0 +1,24 @@
+
+stages:
+  - build
+  - deploy
+
+build-project:
+    stage: build
+    image: node:18-alpine3.16
+    script:
+        - npm install
+        - npm run build
+    artifacts:
+        paths: 
+            - build
+        expire_in: 10 days
+    
+deploy-application:
+    stage: deploy
+    image: 
+        name: amazon/aws-cli:2.9.0
+        entrypoint: [""]
+    script:
+        - aws --version
+        - aws s3 sync build s3://$AWS_S3_BUCKET --delete

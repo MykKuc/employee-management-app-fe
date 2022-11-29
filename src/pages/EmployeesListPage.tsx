@@ -5,10 +5,10 @@ const EmployeesListPage = () => {
 
     const [employees, setEmployees] = useState<any[]>([]);
 
-    /* Get all the employees. */
+    
     useEffect(() => {
 
-        fetch('http://localhost:8080/all',{
+        fetch('https://api.employeemanagementapp.com/all',{
             method: "GET"
             })
             .then(response => response.json())
@@ -16,6 +16,7 @@ const EmployeesListPage = () => {
             .catch(error => console.log(`Error is ${error}`));
 
     }, [employees]);
+    
 
     const listOfEmployees = employees.map(employee =>
         <Employee key={employee.id}

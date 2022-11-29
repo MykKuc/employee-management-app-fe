@@ -3,17 +3,17 @@ import './LoginPage.css';
 
 const LoginPage = () => {
 
-    const initialState = {
+  /*  const initialState = {
         username: '',
         password: '',
     }
 
-
+*/
     /* I will need to validate things */
-    const validate = () => {
+ /*   const validate = () => {
         return 'Nothing for now';
     }
-
+*/
     
 
     return(
