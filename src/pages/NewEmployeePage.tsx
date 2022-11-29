@@ -4,13 +4,13 @@ import './NewEmployeePage.css';
 
 const NewEmployeePage = () => {
 
-    const initialState = {
+  /*  const initialState = {
         employeeName: '',
         employeeSurname: '',
         date: '2012-02-25',
 
     }
-    
+    */
     useState()
     
 
