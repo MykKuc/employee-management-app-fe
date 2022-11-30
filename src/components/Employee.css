@@ -1,0 +1,17 @@
+
+.employee-card{
+    margin: 15px;
+    width: 70%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.text-style{
+    padding-left: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.change-info-button{
+    text-align: right;
+}

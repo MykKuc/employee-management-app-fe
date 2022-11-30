@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import Employee from '../components/Employee';
+import './EmployeesListPage.css';
 
 const EmployeesListPage = () => {
 
     const [employees, setEmployees] = useState<any[]>([]);
 
-    
+    // 'https://api.employeemanagementapp.com/all'
     useEffect(() => {
 
-        fetch('https://api.employeemanagementapp.com/all',{
+        fetch('http://localhost:8080/all',{
             method: "GET"
             })
             .then(response => response.json())
@@ -27,8 +28,10 @@ const EmployeesListPage = () => {
 
     return (
         <>
+        <div className='full-page'>
             <p>The List of all the employees:</p>
             {listOfEmployees}
+        </div>
         </>
     );
 }
