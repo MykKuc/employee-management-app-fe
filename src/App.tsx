@@ -10,6 +10,7 @@ import LoginPage from './pages/LoginPage';
 const App = () => {
     return(
         <>
+        <div className='page'>
         <header>
         <h1 className='header-h1'>Employee Management Application</h1>
         <nav className='header-nav-links'>
@@ -30,9 +31,10 @@ const App = () => {
             <Route path='/login' element={<LoginPage/>}></Route>
         </Routes>
 
-        <footer >
+        <footer className='footer'>
             Created by Mykoliux. All rights reserved 2022
-        </footer>     
+        </footer>  
+        </div>   
         </>
     )
 }

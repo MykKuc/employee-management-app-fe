@@ -5,10 +5,10 @@ const EmployeesListPage = () => {
 
     const [employees, setEmployees] = useState<any[]>([]);
 
-    
+    // 'https://api.employeemanagementapp.com/all'
     useEffect(() => {
 
-        fetch('https://api.employeemanagementapp.com/all',{
+        fetch('http://localhost:8080/all',{
             method: "GET"
             })
             .then(response => response.json())

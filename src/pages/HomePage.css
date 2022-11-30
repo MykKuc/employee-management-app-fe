@@ -1,0 +1,88 @@
+.homepage{
+    background-image: linear-gradient(to right, rgb(6, 102, 107),rgb(80, 176, 189));
+}
+
+.homepage-view-employees{
+    position: relative;
+    height: 400px;
+}
+
+.view-box{
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    border-style: solid;
+    border-width: medium;
+    width: 30%;
+    height: 150px;
+}
+
+.list-image{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+.image-list{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    top: 35%;
+    background-image: url(/src/assets/list-image.png);
+    background-size: cover;
+}
+
+
+
+
+
+.add-employees{
+    position: relative;
+    height: 400px;
+}
+
+.image-add-employee{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    top: 36%;
+    background-image: url(/src/assets/add-image.png);
+    background-size: cover;
+}
+
+
+
+.add-category{
+    position: relative;
+    height: 300px;
+}
+
+.image-add-category{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    top: 36%;
+    background-image: url(/src/assets/add-image.png);
+    background-size: cover;
+}
+
+
+
+
+.add-files{
+    position: relative;
+    height: 300px;
+}
+
+.image-add-file{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    top: 37%;
+    background-image: url(/src/assets/add-file.png);
+    background-size: cover;
+}
