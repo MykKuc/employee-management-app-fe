@@ -16,6 +16,9 @@ build-project:
     
 deploy-application:
     stage: deploy
+    only:
+      refs:
+        - master  
     image: 
         name: amazon/aws-cli:2.9.0
         entrypoint: [""]
