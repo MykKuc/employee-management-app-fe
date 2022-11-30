@@ -1,4 +1,5 @@
 import React from "react";
+import './Employee.css';
 
 type props = {
     id: number,
@@ -7,8 +8,19 @@ type props = {
 }
 
 const Employee = (props:props) => {
+
+
+
     return(
-        <li>Employee ID is {props.id}, Employee name is {props.employeeName}, Employee surname is {props.employeeSurname}</li>
+        <>
+        <div className="employee-card">
+
+        <div className="employee-id-text text-style">Employee ID: {props.id}</div>
+        <div className="employee-name-text text-style">Employee name: {props.employeeName}</div> 
+        <div className="employee-surname-text text-style">Employee surname: {props.employeeSurname}</div>
+        <button className="change-info-button">Change Info</button>
+        </div>
+        </>
     )
 }
 

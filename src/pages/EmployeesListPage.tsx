@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Employee from '../components/Employee';
+import './EmployeesListPage.css';
 
 const EmployeesListPage = () => {
 
@@ -27,8 +28,10 @@ const EmployeesListPage = () => {
 
     return (
         <>
+        <div className='full-page'>
             <p>The List of all the employees:</p>
             {listOfEmployees}
+        </div>
         </>
     );
 }
