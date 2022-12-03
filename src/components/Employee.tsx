@@ -9,7 +9,9 @@ type props = {
 
 const Employee = (props:props) => {
 
-
+    const handleDelete = () => {
+       //Comment
+    }
 
     return(
         <>
@@ -19,6 +21,7 @@ const Employee = (props:props) => {
         <div className="employee-name-text text-style">Employee name: {props.employeeName}</div> 
         <div className="employee-surname-text text-style">Employee surname: {props.employeeSurname}</div>
         <button className="change-info-button">Change Info</button>
+        <button onClick={handleDelete} className="delete-button">Delete Employee</button>
         </div>
         </>
     )
