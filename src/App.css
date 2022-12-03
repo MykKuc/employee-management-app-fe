@@ -6,13 +6,20 @@
     padding: 0;
 }
 
+header {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
 .header-h1{
+    margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .header-nav-links{
     position: absolute;
-    top: 5%;
+    margin: 0;
+    top: 3%;
     right: 5%;
 }
 

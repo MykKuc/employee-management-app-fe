@@ -6,10 +6,10 @@ const EmployeesListPage = () => {
 
     const [employees, setEmployees] = useState<any[]>([]);
 
-    // 'https://api.employeemanagementapp.com/all'
+    
     useEffect(() => {
 
-        fetch('http://localhost:8080/all',{
+        fetch('https://api.employeemanagementapp.com/api/employee',{
             method: "GET"
             })
             .then(response => response.json())
@@ -29,8 +29,12 @@ const EmployeesListPage = () => {
     return (
         <>
         <div className='full-page'>
-            <p>The List of all the employees:</p>
-            {listOfEmployees}
+            <p className='employee-list-text'>The List of all the employees below. 
+            On this page you can see all the existing employees
+            with information like name, surname, salary and department
+            that are in the Application.
+            </p>
+            <div className='employee-list'>{listOfEmployees}</div>
         </div>
         </>
     );

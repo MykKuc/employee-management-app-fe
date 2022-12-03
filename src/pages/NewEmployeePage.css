@@ -1,11 +1,33 @@
 
+.new-employee-page{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-image: linear-gradient(to right,rgb(150, 237, 243),rgb(40, 221, 245));
+}
+
+.new-employee-info{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
 .form-input-wrapper{
+    position: absolute;
+    top: 15%;
+    left: 20%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
 }
 
 .form-input-card{
+    position: relative;
+    height: 300px;
+    width: 400px;
     border-style: solid;
     border-radius: 15px;
     border-width: thin;
@@ -13,8 +35,20 @@
     grid-row: 1 / 5;
 }
 
-.new-employee-info{
-    font-family: 'Roboto';
+
+
+.employee-name-input{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 15%;
+    left: 3%;
+}
+
+.employee-surname-input{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    top: 25%;
+    left: 3%;
 }
 
 
