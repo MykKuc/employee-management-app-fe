@@ -1,20 +1,26 @@
 .homepage{
     background-image: linear-gradient(to right, rgb(6, 102, 107),rgb(80, 176, 189));
+    margin: 0;
 }
 
 .homepage-view-employees{
     position: relative;
+    margin: 0;
     height: 400px;
 }
 
 .view-box{
     position: absolute;
-    left: 25%;
+    left: 20%;
     top: 30%;
     border-style: solid;
     border-width: medium;
-    width: 30%;
+    border-radius: 15px;
+    width: 35%;
     height: 150px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    font-size: 18px;
 }
 
 .list-image{

@@ -14,10 +14,11 @@ const App = () => {
         <header>
         <h1 className='header-h1'>Employee Management Application</h1>
         <nav className='header-nav-links'>
-            <button><Link  to="/">Home Page</Link></button>
-            <button><Link  to="/list">Employees List</Link></button>
-            <button><Link  to="/new">New Employee</Link></button>
-            <button><Link  to="/login">Login</Link></button>
+            <button className='header-button'> <Link  to="/">Home Page</Link></button>
+            <button className='header-button'> <Link  to="/list">Employees List</Link></button>
+            <button className='header-button'> <Link  to="/new">New Employee</Link></button>
+            <button className='header-button'> Categories!!</button>
+            <button className='header-button'> <Link  to="/login">Login</Link></button>
         </nav>
 
         </header>
