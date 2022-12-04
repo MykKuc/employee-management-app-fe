@@ -9,8 +9,15 @@ type props = {
 
 const Employee = (props:props) => {
 
-    const handleDelete = () => {
-       //Comment
+   const handleDelete = (e: React.MouseEvent<HTMLButtonElement>) => {
+        console.log('clicked')
+        fetch(`http://localhost:8080/api/employee/${e.currentTarget.id}`, {
+            method: 'DELETE',
+            headers: {'Content-Type':'application/json'},
+        })
+        .then(response => response.json)
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
     }
 
     return(
