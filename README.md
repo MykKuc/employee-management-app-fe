@@ -1,5 +1,13 @@
 # Employee Management Application Front-End
 
+## Hosted Application (AWS)
+
+*Domain Names: employeemanagementapp.com or www.employeemanagementapp.com*
+
+*This Application is hosted on AWS. Frontend is hosted inside S3 Bucket and delivered using CloudFront and AWS Certificate Manager, Domain name bought and registered using Amazon Route 53. Backend is deployed on EC2 Instances (AMI: Ubuntu 22.04 LTS; Instance type: t3.nano) and load balanced using Application Load Balancer (ALB). MySQL database is running on Amazon RDS.*
+
+## The Purpose of Application
+
 This is the Front End of the Web Application intended for HR purposes, for Employee Management purposes.
 Internet URL: employeemanagementapp.com
 

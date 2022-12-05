@@ -6,6 +6,8 @@ import HomePage from './pages/HomePage';
 import NewEmployeePage from './pages/NewEmployeePage';
 import './App.css';
 import LoginPage from './pages/LoginPage';
+import CategoryPage from './pages/CategoryPage';
+
 
 const App = () => {
     return(
@@ -30,6 +32,7 @@ const App = () => {
             <Route path='/list' element={<EmployeesListPage/>}></Route>
             <Route path='/new' element={<NewEmployeePage/>}></Route>
             <Route path='/login' element={<LoginPage/>}></Route>
+            <Route path='/category' element={<CategoryPage />}></Route>
         </Routes>
 
         <footer className='footer'>
