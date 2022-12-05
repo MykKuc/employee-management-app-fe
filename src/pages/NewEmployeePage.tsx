@@ -18,8 +18,8 @@ const NewEmployeePage = () => {
 
 
     const submitEmployee = () => {
-        // https://api.employeemanagementapp.com/api/employee
-        fetch('http://localhost:8080/api/employee', {
+        
+        fetch('https://api.employeemanagementapp.com/api/employee', {
             method: 'POST',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify(

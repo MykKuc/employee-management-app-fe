@@ -8,7 +8,7 @@ type props = {
 }
 
 const Employee = (props:props) => {
-
+    // Not completed
    const handleDelete = (e: React.MouseEvent<HTMLButtonElement>) => {
         console.log('clicked')
         fetch(`http://localhost:8080/api/employee/${e.currentTarget.id}`, {
