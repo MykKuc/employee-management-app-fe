@@ -9,9 +9,14 @@
 header {
     border-bottom-style: solid;
     border-bottom-width: thin;
+    height: 60px;
 }
 
 .header-h1{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    text-decoration: underline;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -19,16 +24,23 @@ header {
 .header-nav-links{
     position: absolute;
     margin: 0;
-    top: 3%;
-    right: 5%;
+    top: 2%;
+    right: 11%;
 }
+
+.header-button{
+    border-radius: 15px;
+    height: 30px;
+    margin: 3px;
+}
+
 
 .page-nav-link{
     border-style: solid;
-    
 }
 
 footer {
     position: fixed;
+    font-size: small;
     bottom: 1%;
 }

@@ -8,8 +8,17 @@ type props = {
 }
 
 const Employee = (props:props) => {
-
-
+    // Not completed
+   const handleDelete = (e: React.MouseEvent<HTMLButtonElement>) => {
+        console.log('clicked')
+        fetch(`http://localhost:8080/api/employee/${e.currentTarget.id}`, {
+            method: 'DELETE',
+            headers: {'Content-Type':'application/json'},
+        })
+        .then(response => response.json)
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
+    }
 
     return(
         <>
@@ -19,6 +28,7 @@ const Employee = (props:props) => {
         <div className="employee-name-text text-style">Employee name: {props.employeeName}</div> 
         <div className="employee-surname-text text-style">Employee surname: {props.employeeSurname}</div>
         <button className="change-info-button">Change Info</button>
+        <button onClick={handleDelete} className="delete-button">Delete Employee</button>
         </div>
         </>
     )

@@ -17,7 +17,9 @@ const HomePage = () => {
 
         <section className='add-employees'>
         <div className='view-box'>
-            <p>The application provides possibility of adding new Employees to your list.</p>
+            <p>The application provides possibility of adding new Employees to your list.
+                Just enter the data of the new Employee.
+            </p>
         </div>
         <div className='image-add-employee'></div>
         </section>
